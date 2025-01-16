@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if shoulder %}
+    <table style="border: 2px solid black;">
+       <thead>
+        <tr>
+            <td>Sr.no</td>
+            <td>Parts</td>
+            <td>Size</td>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Shoulder</td>
+            <td>{{shoulder}}</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Waist</td>
+            <td>{{waist}}</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Shoulder to Wrist</td>
+            <td>{{hand}}</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Shirt Height</td>
+            <td>{{height}}</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Waist To Ankel</td>
+            <td>{{ankle}}</td>
+        </tr>
+       </tbody>
+
+    </table>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyMatrix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(' https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?cs=srgb&dl=pexels-tembela-bohle-1884584.jpg&fm=jpg');
+            background-size: 1200px 850px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #0d0a09;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .intro {
+            color: #363738;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        
+        .btn:hover {
+            background-color: #767171;
+        }
+
+        .navbar {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            background-color: #333;
+            margin: 0 10px;
+            color: #fff;
+            border: 2px solid #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(117, 114, 114);
+            border-color: #424954;
+            color: #fff;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>BodyMatrix</b></h1>
+        <div class="navbar" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <a href="/index">Login</a>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <br><br>
+            <h4>Welcome to BodyMatrix, where you can find the perfect fit for your shirts and T-shirts via our virtual fitting platform.</h4>
+            <h4>Measure your body size or try on a T-shirt for a personalized fit.</h4>
+        </div>
+        <div class="btn-container" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+           <form action="/measurement" method="POST">
+            <!-- <a href="measure.html" class="btn">Measure Body Size</a> -->
+            <button type="submit" class="btn">Measure Body Size</button>
+            </form>
+            <form action="/tryon" method="POST">
+            <button type="'submit" class="btn">Try on T-shirt</button>
+<br><br></form>
+        </div>
+        <div class="features">
+            <div class="feature" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                <h2>Accurate Measurements</h2>
+                <img src="accuratemeasurement.jpg" alt="accurate" height="150px" width="200px">
+                <p><i>Our advanced technology ensures precise body measurements for the perfect fit.</i></p>
+            </div>
+            <div class="feature" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                <h2>Virtual Try-On</h2>
+                <img src="styleme-virtual-fitting-room.jpg" alt="virtual" height="150px" width="220px">
+                <p><i>See how different T-shirts will look on you without trying them on physically.</i></p>
+            </div>
+            <div class="feature" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                <h2>Custom Recommendations</h2>
+                <img src="b12c96ce3a48d25b2c0f549da01d4b34.jpg" alt="custom" height="160px" width="200px">
+                <p><i>Get T-shirt recommendations based on your body shape and style.</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

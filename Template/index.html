@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <form class="grid" action="/focal" method="POST">
+        <label for="Name">First Name:</label>
+        <input type="text" name="fname" id="fname">
+        <label for="Name">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+        <label for="Name">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="Age">Age</label>
+        <input type="text" name="age" id="age">
+        <label for="Weight">Weight</label>
+        <input type="text" name="weight" id="weight">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="fmale">Female
+        <label for="Name">Password:</label>
+        <input type="password" name="password" id="password">
+    <input type="submit" class="file_submit" value="Submit">
+    
+<br>
+<div class="pyth">
+    {% if name %}
+    <h3 style="color: aqua;">Hello {{name}} how are you Age:{{age}} Weight:{{weight}} Gender:{{gender}} Focal:{{focal}}</h3>
+    {% endif %}
+</div>
+</form>
+</body>
+</html>
